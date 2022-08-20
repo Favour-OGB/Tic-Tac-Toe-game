@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #131419;
+}
+#container{
+    height: auto;
+    width: auto;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 25px;
+    
+    
+    
+    
+}
+#startingPage{
+    height: 220px;
+    width: 400px;
+    margin: 30px 0;
+
+}
+#startingPage h2{
+    font-size: 50px;
+    color: #aab3e1;
+    text-align: center;
+    font-family: 'Rye', cursive;
+}
+
+#startingPage #line{
+    height: 2px;
+    width: 100%;
+    background: rgb(114, 248, 18);
+    margin: 20px 0 30px;
+
+}
+
+#startingPage h4{
+    font-size: 25px;
+    color: #aab3e1;
+    text-align: center;
+    font-family: 'Aladin', cursive;
+}
+
+#startingPage #button, #winner #button{
+    height: auto;
+    width: 100%;
+    margin:  30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+#button button{
+    height: 55px;
+    width: 40%;
+    cursor: pointer;
+    background-color: rgb(15, 27, 29);
+    border: none;
+    color: #aab3e1;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px rgb(255 255 255/ 18%), -2px -2px 5px rgb(0 0 0 / 87%);
+
+}
+#startingPage #button button:hover, #winner #button button:hover{
+    transform: scale(0.90);
+}
+
+#winner{
+   display: none; 
+   padding-left: 20px;
+   padding-right: 20px;
+}
+#winner h2{
+    padding-top: 10px;
+    font-size: 35px;
+    color: #aab3e1;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#mainPage{
+    height: 550px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: none;
+    background-color:#131419;
+    
+
+    
+    
+}
+#mainPage #headerBtns{
+    height: 60px;
+    width: 310px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 2px 2px 2px rgb(255 255 255/ 25%), -2px -2px 5px rgb(0 0 0 / 88%);;
+}
+#mainPage #headerBtns button{
+    height: 60px;
+    width: 160px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Ewert', cursive;
+    color: greenyellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.60);
+}
+
+#mainPage #headerBtns #O_round{
+    left: 160px;
+    z-index: 3;
+}
+
+#showChange{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    background: #e72dc5;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+#gameBoard{
+    height: 400px; 
+    width: 330px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    display: grid;grid-template-columns:  100px 100px 100px;
+    grid-gap: 15px;
+}
+.boxes{
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.boxes i{
+    font-size: 50px;
+    
+}
+
+@media screen and (max-width:560px){
+    #button button{
+        height: 45px;
+        width: 25%;
+        font-size: 12px;
+        
+        
+    }
+    #startingPage h2, #winner h2{
+        font-size: 20px;
+    }
+    #startingPage h4{
+        font-size: 12px;
+       
+    }
+
+    #startingPage {
+        width: 300px;
+        height: 150px;
+        
+    }
+    #winner{
+        padding-top: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    #mainPage{
+        height: 550px;
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        display: none;
+        background-color:#131419;
+    } 
+    .boxes{
+        width: 80px;
+        height: 80px;
+    }
+    
+        
+       
+}

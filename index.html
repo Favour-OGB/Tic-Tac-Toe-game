@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe (X & O). Everyone's favorite game.</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/xand0favicon.webp" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1dceec247c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="container">
+        <!--Starting Page-->
+        <div id="startingPage">
+            <h2>X & O's</h2>
+            <div id="line"></div>
+            <h4>SELECT YOUR CHARACTER.</h4>
+            <div id="button">
+                <button id="playerX" class="choose">Player [X]</button>
+                <button id="playerO" class="choose">Player [O]</button>
+            </div>
+        </div>
+        <!--MainPage-->
+        <div id="mainPage">
+            <div id="headerBtns">
+                <button id="">X Round</buttons>
+                <button id="O_round">O Round</buttons>
+                <div id="showChange"></div>
+            </div>
+            <div id="gameBoard">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+            </div>
+        </div>
+        <!--Winner Page-->
+        <div id="winner">
+            <h2 id="winnerName">Player X wins!</h2>
+            <div id="button">
+                <button id="quit">Restart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
